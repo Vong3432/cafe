@@ -14,11 +14,13 @@ $(document).on('scroll', function() {
     	$('.blockquote').show();
         $('.blockquote').addClass('animated fadeInLeft slow');
 
-        $("#ourCoffee").show();
-        $("#ourCoffee").addClass('animated fadeInLeft delay-4s');
-		
-		$("#coffeeContent").show();
-        $("#coffeeContent").addClass('animated fadeInLeft slower delay-4s');
+        if( $(this).scrollTop() >= $('.page-content').position().top ){
+	        $("#ourCoffee").show();
+	        $("#ourCoffee").addClass('animated fadeInLeft delay-4s');
+			
+			$("#coffeeContent").show();
+	        $("#coffeeContent").addClass('animated fadeInLeft slower delay-4s');
+    	}
 
     }
 
