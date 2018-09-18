@@ -1,72 +1,47 @@
 body
 {
-	transform-style: preserve-3d;
-	perspective: 1px;
 	margin: 0;
 	padding: 0;
-	height: 100%;
+	background-color: rgba(238, 238, 238, 0.2);
 	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
-html
-{
-	height: 100%;
-	overflow: hidden;
+	overflow-x: hidden;	
 }
 
 .navbar
 {
 	z-index: 1;	
-	background-color: rgba(0,0,0,0.2);	
-	letter-spacing: 1px;
+	background-color: rgba(255,255,255,1);	
+	letter-spacing: 1.5px;
 }
 
-.navbar-nav
+.navbar a:hover
 {
-	margin: 0 auto;
+
 }
 
-.parallax
+.header
 {
-	box-sizing: border-box;
-	min-height: 100vh;
-	transform-style: inherit;
-	width: 100vw;
-	position: relative;
-}
-
-
-.parallax,.parallax::before
-{
-	background: 50% 50% / cover;
-}
-
-.parallax::before
-{
-	content: "";
+	/*background-image: url(image/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;	*/
 	position: absolute;
+	background-color: white;
 	top: 0;
-	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: url(image/bg.jpg);
-	background-size: cover;
-	transform-origin: center center 0;
-	transform: translateZ(-1px) scale(2);
-	z-index: -1;
-	min-height: 100vh;
+	right: 0;
+	height: 100%;
+
 }
 
-.parallax-text
+.header-text
 {
 	margin: 0 auto;
-	margin-top: 20%;
-	color: white;
+	margin-top: 20%;	
 	letter-spacing: 2px;
 }
 
-.parallax-text p
+.header-text p
 {
 	margin-left: 20%;
 	margin-right: 20%;
@@ -79,9 +54,39 @@ html
 	background-color: white;	
 }
 
+.page-content
+{
+	/*color: white;
+	background-image: url(image/relax.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	position: absolute;
+	top: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+}
+
+.page-title
+{
+	margin-top: 15%;
+}
+
+.blockquote p
+{
+	font-style: italic;
+	letter-spacing: 2px;
+}
+
+.blockquote-footer
+{
+	color: silver;
+}
+
 @media screen and (max-width: 600px)
 {
-	.parallax h1
+	.header h1
 	{
 
 	}
