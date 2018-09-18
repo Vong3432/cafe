@@ -2,7 +2,8 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-color: rgba(238, 238, 238, 0.2);
+	/*background-color: rgba(238, 238, 238, 0.2);*/
+	background: linear-gradient(151deg, silver 20%, #eeeeee 51%, #ecf0f1 75%);
 	overflow-y: scroll;
 	overflow-x: hidden;	
 }
@@ -10,7 +11,7 @@ body
 .navbar
 {
 	z-index: 1;	
-	background-color: rgba(255,255,255,1);	
+	/*background-color: rgba(255,255,255,1);*/	
 	letter-spacing: 1.5px;
 }
 
@@ -38,13 +39,15 @@ body
 {
 	margin: 0 auto;
 	margin-top: 20%;	
-	letter-spacing: 2px;
+	letter-spacing: 2px;	
 }
 
 .header-text p
 {
 	margin-left: 20%;
 	margin-right: 20%;
+	color: #eb974e;
+	font-size: 2.3vh;
 }
 
 
@@ -61,7 +64,7 @@ body
 	background-size: cover;
 	background-repeat: no-repeat;*/
 	position: absolute;
-	top: 100%;
+	top: 110%;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -81,13 +84,20 @@ body
 
 .blockquote-footer
 {
-	color: silver;
+	color: grey;
+}
+
+.moon
+{
+	margin-top: -50px; 
+}
+
+.cup
+{
+	margin-top: 15px;
 }
 
 @media screen and (max-width: 600px)
 {
-	.header h1
-	{
-
-	}
+	
 }

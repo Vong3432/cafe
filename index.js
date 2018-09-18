@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$(".blockquote").hide();
 	$(".header-text").hide();
 	$("#ourCoffee").hide();
-	
+	$("#coffeeContent").hide();
 });
 
 $(document).on('scroll', function() {
@@ -16,5 +16,11 @@ $(document).on('scroll', function() {
 
         $("#ourCoffee").show();
         $("#ourCoffee").addClass('animated fadeInLeft delay-4s');
+		
+		$("#coffeeContent").show();
+        $("#coffeeContent").addClass('animated fadeInLeft slower delay-4s');
+
     }
+
+
 });
