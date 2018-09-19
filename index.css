@@ -3,7 +3,7 @@ body
 	margin: 0;
 	padding: 0;
 	/*background-color: rgba(238, 238, 238, 0.2);*/
-	background: linear-gradient(151deg, silver 20%, #eeeeee 51%, #ecf0f1 75%);
+	/*background: linear-gradient(151deg, silver 20%, #eeeeee 51%, #ecf0f1 75%);*/
 	overflow-y: scroll;
 	overflow-x: hidden;	
 }
@@ -97,7 +97,36 @@ body
 	margin-top: 15px;
 }
 
+#food,#drink
+{
+	margin-top: 15%;	
+}
+
+#food h1,#drink h1
+{
+	letter-spacing: 2px;
+	font-style: italic;
+}
+
+#sample1,#sample2
+{
+	margin-top: 15px;
+	box-shadow: 1px 2px 1px 1px black;
+}
+
+#source1,#source2
+{
+	color: black;
+	font-style: italic;
+	font-size: 12px;
+}
+
 @media screen and (max-width: 600px)
 {
-	
+	body
+	{
+		background: white;
+	}
+
+
 }
