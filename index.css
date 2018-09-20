@@ -4,6 +4,11 @@ body
 	padding: 0;
 	/*background-color: rgba(238, 238, 238, 0.2);*/
 	/*background: linear-gradient(151deg, silver 20%, #eeeeee 51%, #ecf0f1 75%);*/
+	background: #2e3131;
+  	background-image: url("image/bg.jpg"); /* fallback */
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	background-image: url(image/bg.jpg),linear-gradient(#2e3131,#6c7a89);
 	overflow-y: scroll;
 	overflow-x: hidden;	
 }
@@ -11,13 +16,35 @@ body
 .navbar
 {
 	z-index: 1;	
-	/*background-color: rgba(255,255,255,1);*/	
+	background-color: rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 1px 0px silver;	
 	letter-spacing: 1.5px;
 }
 
-.navbar a:hover
+.nav-link
 {
+	color: white;
+}
 
+.active .nav-link
+{
+	color: gold;
+}
+
+.nav-link:hover
+{
+	color: silver;
+	transition: 1s;
+}
+
+#right-item
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 1%;
+	float: right;
+	display: block;
 }
 
 .header
@@ -26,7 +53,7 @@ body
 	background-size: cover;
 	background-repeat: no-repeat;	*/
 	position: absolute;
-	background-color: white;
+
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -46,7 +73,7 @@ body
 {
 	margin-left: 20%;
 	margin-right: 20%;
-	color: #eb974e;
+	color: white;
 	font-size: 2.3vh;
 }
 
@@ -78,13 +105,15 @@ body
 
 .blockquote p
 {
+	font-size: 2vh;
 	font-style: italic;
 	letter-spacing: 2px;
+	color: #ececec;
 }
 
 .blockquote-footer
 {
-	color: grey;
+	color: silver;
 }
 
 .moon
@@ -106,6 +135,7 @@ body
 {
 	letter-spacing: 2px;
 	font-style: italic;
+	color: #e4e9ed;
 }
 
 #sample1,#sample2
@@ -121,6 +151,22 @@ body
 	font-size: 12px;
 }
 
+@media screen and (max-width: 768px)
+{
+
+	#right-item
+	{
+		position: relative;
+		width: 100%;
+	}
+
+	#reg,#login
+	{
+		width: 100%;
+	}
+}
+
+
 @media screen and (max-width: 600px)
 {
 	body
@@ -128,5 +174,6 @@ body
 		background: white;
 	}
 
-
 }
+
+
