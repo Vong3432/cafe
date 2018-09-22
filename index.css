@@ -2,13 +2,9 @@ body
 {
 	margin: 0;
 	padding: 0;
-	/*background-color: rgba(238, 238, 238, 0.2);*/
+	background-color: rgba(46, 49, 49, 0.9);
 	/*background: linear-gradient(151deg, silver 20%, #eeeeee 51%, #ecf0f1 75%);*/
-	background: #2e3131;
-  	background-image: url("image/bg.jpg"); /* fallback */
-  	background-repeat: no-repeat;
-  	background-size: cover;
-	background-image: url(image/bg.jpg),linear-gradient(#2e3131,#6c7a89);
+
 	overflow-y: scroll;
 	overflow-x: hidden;	
 }
@@ -16,8 +12,8 @@ body
 .navbar
 {
 	z-index: 1;	
-	background-color: rgba(0,0,0,0.2);
-	box-shadow: 1px 1px 1px 0px silver;	
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	letter-spacing: 1.5px;
 }
 
@@ -49,9 +45,9 @@ body
 
 .header
 {
-	/*background-image: url(image/bg.jpg);
+	background-image: url(image/bg.jpg);
 	background-size: cover;
-	background-repeat: no-repeat;	*/
+	background-repeat: no-repeat;
 	position: absolute;
 
 	top: 0;
@@ -164,6 +160,7 @@ body
 	{
 		width: 100%;
 	}
+
 }
 
 
