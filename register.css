@@ -1,0 +1,65 @@
+body
+{
+	box-sizing: border-box;
+	background-image: url(image/relax.jpg);
+	background-size: auto;	
+	background-repeat: no-repeat;
+	background-position: center center 0;
+	height: 100%;
+}
+
+.nav-link
+{
+	color: white;
+	font-size: 2vh;
+}
+
+.nav-link:hover
+{
+	color: #29f1c3;
+	transition: 1s;
+}
+
+
+
+.form-center
+{
+	margin-top: 13.77vh;
+}
+
+.form-group
+{
+	color: white;
+	letter-spacing: 2px;
+}
+
+form
+{
+	max-width: 400px;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 12px;
+
+}
+
+form h1
+{
+	color: white;
+	letter-spacing: 1px;
+}
+
+#divider
+{
+	width: 60%;
+	background-color: white;
+}
+
+input[type]
+
+@media screen and (max-width: 600px)
+{
+
+	form
+	{
+		width: 100%;
+	}
+}
