@@ -1,11 +1,12 @@
-body
+body,html
 {
 	box-sizing: border-box;
-	background-image: url(image/relax.jpg);
-	background-size: auto;	
-	background-repeat: no-repeat;
-	background-position: center center 0;
+	background: url(http://25.media.tumblr.com/0d342dbe99dd698a82baf8d168ce1790/tumblr_mkbhagMANA1rwmh9jo1_500.gif) no-repeat center center fixed;
+	background-size:cover;		
+	background-repeat:no-repeat;
+
 	height: 100%;
+	width: 100%;
 }
 
 .nav-link
@@ -16,7 +17,7 @@ body
 
 .nav-link:hover
 {
-	color: #29f1c3;
+	color: gold;
 	transition: 1s;
 }
 
@@ -36,15 +37,16 @@ body
 form
 {
 	max-width: 400px;
-	background-color: rgba(0,0,0,0.7);
-	border-radius: 12px;
+	background-color: rgba(46, 49, 49, 0.5);
+	border-radius: 20px;
 
 }
 
 form h1
-{
+{	
 	color: white;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
+	font-family: 'Unlock', cursive;
 }
 
 #divider
